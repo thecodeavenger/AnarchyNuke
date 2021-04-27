@@ -27,6 +27,12 @@
 
             filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0F7B", endColorstr="#F89B29", GradientType=1 );
         }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
     </style>
 </head>
 <body>
@@ -64,15 +70,10 @@
             <path fill="#fff" fill-opacity=".4" d="M0,160L48,149.3C96,139,192,117,288,133.3C384,149,480,203,576,218.7C672,235,768,213,864,181.3C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
         </svg>
         
-        <div class="w3-display-middle sans w3-text-white" style="margin-top: 50px;">
+        <div class="w3-display-middle w3-text-white" style="margin-top: 50px; width: 40%;">
             <h1 class="sans w3-center">Gallery</h1>
-            <div style="width: 200px; height: 200px; opacity: .4; margin: 20px;" class="w3-white w3-round w3-left"></div>
-            <div style="width: 200px; height: 200px; opacity: .4; margin: 20px;" class="w3-white w3-round w3-left"></div>
-            <div style="width: 200px; height: 200px; opacity: .4; margin: 20px;" class="w3-white w3-round w3-left"></div>
-            <br>
-            <div style="width: 200px; height: 200px; opacity: .4; margin: 20px;" class="w3-white w3-round w3-left"></div>
-            <div style="width: 200px; height: 200px; opacity: .4; margin: 20px;" class="w3-white w3-round w3-left"></div>
-            <div style="width: 200px; height: 200px; opacity: .4; margin: 20px;" class="w3-white w3-round w3-left"></div>
+            <img width="100%" src="Images/event.png" class="w3-center w3-round w3-left Gallery">
+            <img width="100%" src="Images/mobfarm.png" class="w3-center w3-round w3-left Gallery">
         </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w3-display-bottommiddle" style="width: 100%;">
@@ -82,5 +83,9 @@
             Made for Anarchy by people who <i class="fas fa-heart w3-text-red"></i> Anarchy
         </p>
     </div>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+    Gallery = w3.slideshow(".Gallery", 2000);
+</script>
 </body>
 </html>
